@@ -1,5 +1,8 @@
 def call(String fileName, String imageName, String dockerTag){
-  def sedCommand = " sed -i -e s|${imageName}|${imageName}:${dockerTag}|g ${fileName}"
-  echo  "Executing: ${sedCommand}"
+  echo "${imageName}"
+  echo "${dockerTag}"
+  echo "${fileName}"
+ // def sedCommand = " sed -i -e s|${imageName}|${imageName}:${dockerTag}|g ${fileName}"
+ // echo  "Executing: ${sedCommand}"
   //sh sedCommand  
 }
