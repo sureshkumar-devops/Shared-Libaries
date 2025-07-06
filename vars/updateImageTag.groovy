@@ -1,6 +1,5 @@
 def call(String fileName, String imageName, String imageTag){  
-  def sedCommand = " sed -i -e s|${imageName}:.*|${imageName}:${imageTag}|g ${fileName}"
+  def sedCommand = "sed -i -e 's|${imageName}:.*|${imageName}:${imageTag}|g' ${fileName}"
   echo  "Executing: ${sedCommand}"
- sh sedCommand  
-  //sed -i -e 's|${imageName}:.*|${imageName}:${imageTag}|g' ${filePath}
+ sh "${sedCommand}"  
 }
