@@ -6,4 +6,4 @@ def call(){
        //    error "Pipeline aborted due to Quality Gate Failure: ${qg.status}"   
         }
     }
-}
+
