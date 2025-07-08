@@ -1,5 +1,5 @@
 def call(){    
-    timeout(time: 5 , unit: "MINUTES"){
+    timeout(time: 5 , unit: "SECONDS"){
         waitForQualityGate abortPipeline: false
        // def qg = waitForQualityGate()
        // if (qg.status != 'OK'){
